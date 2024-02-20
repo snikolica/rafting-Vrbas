@@ -1,0 +1,946 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;1,600;1,700&family=DM+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;1,600;1,700&family=DM+Sans:wght@400;700&family=Literata:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --green: #004823;
+  --yellow: #feca05;
+  --dark: #333;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  height: 100vh;
+}
+
+.header {
+  background-image: url(img/Onama-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+}
+.header nav {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav .logo {
+  padding-top: 10px;
+  width: 150px;
+}
+.header nav .logo img {
+  width: 100%;
+}
+.header nav ul {
+  list-style: none;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+.header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.header nav ul li a.active {
+  color: var(--yellow);
+}
+.header nav ul li .green {
+  padding: 6px 12px;
+  background-color: var(--green);
+  border-radius: 15px;
+}
+.header nav .phone {
+  padding-top: 15px;
+  cursor: pointer;
+}
+.header nav .phone i {
+  display: inline;
+  color: var(--white);
+  font-size: 20px;
+}
+.header nav .phone p {
+  color: var(--white);
+  display: inline;
+font-size: 20px;
+}
+.header h1 {
+  font-family: "Literata", serif;
+  font-size: 64px;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* MOBILE-START */
+
+.mobile-header {
+  display: none;
+  background-image: url(img/Onama-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  position: relative;
+}
+.mobile-header .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+.mobile-header nav {
+  padding: 10px 15px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+.mobile-header nav .mobile-logo {
+  width: 70px;
+}
+.mobile-header nav .mobile-logo img {
+  width: 100%;
+}
+.mobile-header nav .hamburger {
+  font-size: 25px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.mobile-header nav .mobile-phone {
+  cursor: pointer;
+}
+.mobile-header nav .mobile-phone i {
+  font-size: 12px;
+  display: inline;
+  color: var(--white);
+}
+.mobile-header nav .mobile-phone p {
+  color: var(--white);
+  display: inline;
+  font-size: 14px;
+}
+.mobile-header h1 {
+  font-family: "Literata", serif;
+  font-size: 30px;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* MOBILE-END */
+
+
+/* HAMBURGER-START */
+.mobile-menu {
+  display: none;
+  background-image: url(img/footer-bg.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 40vh;
+  padding: 40px 10px;
+  position: relative;
+}
+.mobile-menu i.close {
+  font-size: 30px;
+  color: var(--white);
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.mobile-menu .menu-box {
+  text-align: center;
+}
+.mobile-menu .menu-box ul {
+  list-style: none;
+  padding: 0 80px;
+}
+.mobile-menu .menu-box ul li {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.mobile-menu .menu-box ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.mobile-menu .menu-box ul li a.active {
+  color: var(--yellow);
+}
+/* HAMBURGER-END */
+
+.ponude {
+  padding: 100px 0 70px 0;
+}
+.ponude h5 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.ponude h2 {
+  text-align: center;
+  font-size: 64px;
+  margin: 70px 0 15px 0;
+  font-family: "Literata", serif;
+  color: var(--dark);
+}
+.ponude .paragraf-bottom {
+  text-align: center;
+  font-size: 16px;
+  color: var(--dark);
+}
+.ponude .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ponude .container .ponuda {
+  flex: 0 0 32%;
+  height: 450px;
+  position: relative;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+}
+
+.ponude .container .ponuda .img-box {
+  width: 100%;
+  position: relative;
+}
+.ponude .container .ponuda .img-box h4 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: var(--yellow);
+  font-size: 36px;
+  font-family: "Literata", serif;
+}
+.ponude .container .ponuda .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ponude .container .ponuda .text-ponuda {
+  padding: 20px;
+}
+.ponude .container .ponuda .text-ponuda .paket {
+  display: flex;
+}
+.ponude .container .ponuda .text-ponuda span {
+  font-weight: bold;
+}
+.ponude .container .ponuda .text-ponuda .bottom {
+  position: absolute;
+  bottom: 20px;
+}
+.ponude .container .ponuda .text-ponuda .bottom button {
+  padding: 7px 15px;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+footer {
+  padding: 50px 20px;
+  background-image: url(img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+footer nav {
+  width: 40%;
+  margin: 0 auto 80px auto;
+  text-transform: uppercase;
+}
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+}
+footer .info {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .info .logo {
+  width: 150px;
+}
+footer .info .logo img {
+  width: 100%;
+}
+footer .info-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .info .info-text .info-item {
+  display: flex;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+footer .info .info-text .info-item p {
+  font-size: 16px;
+  margin-left: 15px;
+  color: var(--white);
+}
+
+/* FOOTER-MOBILE-START */
+.mobile-footer {
+  background-image: url(img/footer-bg.jpg);
+  background-position: center right;
+  background-size: cover;
+  padding: 50px 10px;
+  display: none;
+  justify-content: space-between;
+  position: relative;
+}
+.mobile-footer .footer-logo {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+}
+.mobile-footer .mobile-info-text {
+  z-index: 1000;
+}
+.mobile-footer .mobile-info-text .mobile-info-item{
+  font-size: 14px;
+  display: flex;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.mobile-footer .mobile-info-text .mobile-info-item .img {
+  margin-right: 10px;
+}
+
+
+/* FOOTER-MOBILE-END */
+
+/* RESPONSIVE */
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    height: 40vh;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  .ponude {
+    padding: 70px 10px 50px 10px;
+  }
+  .ponude h5 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+  .ponude h2 {
+    font-size: 30px;
+    margin: 50px 0 15px 0;
+  }
+  .ponude .paragraf-bottom {
+    font-size: 14px;
+  }
+  .ponude .container {
+    width: 100%;
+  }
+  .ponude .container .ponuda {
+    flex: 0 0 100%;
+    height: 410px;
+    margin-bottom: 25px;
+  }
+
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  .ponude .container .ponuda .text-ponuda {
+    padding: 20px;
+  }
+  .ponude .container .ponuda .text-ponuda .paket {
+    display: flex;
+  }
+  .ponude .container .ponuda .text-ponuda span {
+    font-weight: bold;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom {
+    position: absolute;
+    bottom: 20px;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom button {
+    padding: 5px 11px;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+  }
+  .mobile-footer .footer-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+}
+@media only screen and (min-width: 401px) and (max-width: 481px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .mobile-header h1 {
+    font-size: 30px;
+  }
+  .mobile-header nav .mobile-phone p {
+    font-size: 16px;
+  }
+  .mobile-menu {
+    height: 35vh;
+  }
+  .ponude {
+    padding: 70px 10px 50px 10px;
+  }
+  .ponude h5 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+  .ponude h2 {
+    font-size: 35px;
+    margin: 50px 0 15px 0;
+  }
+  .ponude .paragraf-bottom {
+    font-size: 14px;
+  }
+  .ponude .container {
+    width: 80%;
+  }
+  .ponude .container .ponuda {
+    flex: 0 0 100%;
+    height: 450px;
+    margin-bottom: 25px;
+  }
+
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  .ponude .container .ponuda .text-ponuda {
+    padding: 20px;
+  }
+  .ponude .container .ponuda .text-ponuda .paket {
+    display: flex;
+  }
+  .ponude .container .ponuda .text-ponuda span {
+    font-weight: bold;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom {
+    position: absolute;
+    bottom: 20px;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom button {
+    padding: 5px 11px;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+    padding: 50px 15px;
+  }
+  .mobile-footer .footer-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    background-image: url(img/Onama-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+  }
+  .mobile-header h1 {
+    font-size: 30px;
+  }
+  .mobile-header nav .mobile-phone p {
+    font-size: 16px;
+  }
+  .kamp {
+    height: auto;
+    background-position: 0% 0%;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .kamp .container .text {
+    padding: 30px 10px 20px 10px;
+    width: 100%;
+  }
+  .kamp .container .text h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .kamp .container .text p {
+    margin: 0 0;
+    text-align: left;
+  }
+  .ponude {
+    padding: 70px 10px 50px 10px;
+  }
+  .ponude h5 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+  .ponude h2 {
+    font-size: 30px;
+    margin: 50px 0 15px 0;
+  }
+  .ponude .paragraf-bottom {
+    font-size: 14px;
+  }
+  .ponude .container {
+    width: 80%;
+  }
+  .ponude .container .ponuda {
+    flex: 0 0 100%;
+    height: 450px;
+    margin-bottom: 25px;
+  }
+
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  .ponude .container .ponuda .text-ponuda {
+    padding: 20px;
+  }
+  .ponude .container .ponuda .text-ponuda .paket {
+    display: flex;
+  }
+  .ponude .container .ponuda .text-ponuda span {
+    font-weight: bold;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom {
+    position: absolute;
+    bottom: 20px;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom button {
+    padding: 5px 11px;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+    padding: 50px 20px;
+  }
+  .mobile-footer .mobile-info-text .mobile-info-item{
+    font-size: 16px;
+  }
+  .mobile-footer .footer-logo {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+   }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center;
+    height: 40vh;
+  }
+  .header nav {
+    padding: 0 10px 0 0;
+  }
+  .header nav .logo {
+    width: 70px;
+  }
+  .header nav .logo img {
+    width: 100%;
+  }
+  .header nav ul {
+    padding-top: 20px;
+  }
+  .header nav ul li {
+    margin: 0 7px;
+    font-size: 11px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 14px;
+  }
+  .header nav .phone p {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .ponude {
+    padding: 70px 10px 50px 10px;
+  }
+  .ponude h5 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+  .ponude h2 {
+    font-size: 40px;
+    margin: 50px 0 15px 0;
+  }
+  .ponude .paragraf-bottom {
+    font-size: 16px;
+  }
+  .ponude .container {
+    width: 95%;
+  }
+  .ponude .container .ponuda {
+    flex: 0 0 48%;
+    height: 450px;
+    margin-bottom: 25px;
+  }
+
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  .ponude .container .ponuda .text-ponuda {
+    padding: 20px;
+  }
+  .ponude .container .ponuda .text-ponuda .paket {
+    display: flex;
+  }
+  .ponude .container .ponuda .text-ponuda span {
+    font-weight: bold;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom {
+    position: absolute;
+    bottom: 20px;
+    padding-right: 10px;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom button {
+    padding: 5px 11px;
+  }
+
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center;
+    height: 40vh;
+  }
+  .header nav {
+    padding: 0 20px 0 10px;
+  }
+  .header nav .logo {
+    width: 90px;
+  }
+  .header nav .logo img {
+    width: 100%;
+  }
+  .header nav ul {
+    padding-top: 20px;
+  }
+  .header nav ul li {
+    margin: 0 15px;
+    font-size: 12px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 14px;
+  }
+
+  .header nav .phone p {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 55px;
+  }
+  .ponude {
+    padding: 70px 10px 50px 10px;
+  }
+  .ponude h5 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+  .ponude h2 {
+    font-size: 45px;
+  }
+
+  .ponude .container {
+    width: 100%;
+  }
+  .ponude .container .ponuda {
+    flex: 0 0 32%;
+    height: 410px;
+    margin-bottom: 25px;
+  }
+
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  .ponude .container .ponuda .text-ponuda p {
+    font-size: 14px;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom p {
+    padding-right: 10px;
+  }
+  .ponude .container .ponuda .text-ponuda .bottom button {
+    padding: 7px 15px;
+  }
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1110px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center;
+    height: 50vh;
+  }
+  .header nav {
+    padding: 0 20px 0 0;
+  }
+  .header nav ul {
+    padding-top: 25px;
+  }
+  .header nav ul li {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 16px;
+  }
+  .header nav .phone p {
+    font-size: 16px;
+  }
+  .header h1 {
+    font-size: 55px;
+  }
+  .ponude h2 {
+    font-size: 45px;
+  }
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+}
+}
+@media only screen and (min-width: 1110px) and (max-width: 1200px) {
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 16px;
+  }
+  .header nav .phone p {
+    font-size: 16px;
+}
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer .info .logo {
+    width: 150px;
+}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .ponude .container .ponuda .img-box h4 {
+    font-size: 25px;
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer .info .logo {
+    width: 150px;
+}
+}

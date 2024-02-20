@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rezervacija.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="about.js" defer></script>
+    <title>Rezervacija</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html#">početna</a></li>
+                <li><a href="about.html">o nama</a></li>
+                <li><a href="paketi.html">paketi</a></li>
+                <li><a href="index.html#kontakt">kontakt</a></li>
+                <li><a href="rezervacija.html" class="green">rezervišite odmah</a></li>
+
+            </ul>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <p>+387 66 600 000</p>
+            </div>
+        </nav>
+        <h1>Rezervacija</h1>
+    </header>
+
+    <!-- MOBILE-START -->
+    <header class="mobile-header">
+        <!-- <img class="img" src="img/Onama-bg.png" alt=""> -->
+        <nav>
+            <div class="mobile-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="mobile-phone">
+                <i class="fa-solid fa-phone"></i>
+                <p>+387 66 600 000</p>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars open"></i>
+            </div>
+
+        </nav>
+        <h1>Rezervacija</h1>
+    </header>
+
+    <!-- MOBILE-END -->
+
+    <!-- HAMBURGER-START -->
+    <div class="mobile-menu">
+        <i class="fa-solid fa-xmark close"></i>
+        <div class="menu-box">
+            <ul>
+                <li><a href="index.html">početna</a></li>
+                <li><a href="about.html">o nama</a></li>
+                <li><a href="paketi.html">paketi</a></li>
+                <li><a href="/index.html#kontakt">kontakt</a></li>
+                <li><a href="rezervacija.html" class="green active">rezervišite odmah</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- HAMBURGER-END -->
+
+
+    <div class="rezervacija" id="rezervacija">
+        <h5>Popunite sva polja i pošaljite rezervaciju!</h5>
+        <form>
+            <div class="form-container">
+                <div class="form-box">
+                    <div class="box-item">
+                        <label for="ime">Ime i Prezime</label>
+                        <input type="text" id="ime">
+                    </div>
+                    <div class="box-item">
+                        <label for="phone">Broj telefona</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="box-item">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="box-item">
+                        <label for="datum">Izaberite datum</label>
+                        <input type="date" id="datum">
+                    </div>
+                    <div class="box-item">
+                        <label for="paket">Izaberite paket</label>
+                        <select name="paket" id="paket">
+                            <option value="paket-1"></option>
+                            <option value="paket-1">Paket 1 - dužina rute 15 km</option>
+                            <option value="paket-1">Paket 1 - dužina rute 15 km + ručak</option>
+                            <option value="paket-1">Paket 2 - dužina rute 20 km</option>
+                            <option value="paket-1">Paket 2 - dužina rute 20 km + ručak</option>
+                            <option value="paket-1">Paket 3 - rafting + smještaj + hrana + transfer sa aerodroma
+                            </option>
+                        </select>
+                    </div>
+                    <div class="box-item">
+                        <label for="broj-osoba">Broj osoba</label>
+                        <input type="number" value="1" min="1" id="broj-osoba">
+                    </div>
+                </div>
+                <div class="poruka">
+                    <label for="poruka">Poruka/Napomena</label>
+                    <textarea name="poruka" id="poruka" cols="30" rows="8"></textarea>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button type="submit" class="btn">Pošaljite rezervaciju</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="index.html">početna</a></li>
+                <li><a href="about.html">o nama</a></li>
+                <li><a href="paketi.html">paketi</a></li>
+                <li><a href="index.html#kontakt">kontakt</a></li>
+                <li><a href="#" class="green">rezervišite odmah</a></li>
+
+            </ul>
+        </nav>
+        <div class="info">
+            <div class="info-box">
+                <div class="info-text">
+                    <div class="info-item">
+                        <div class="img">
+                            <img src="img/location.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Vojvode Uroša Drenovića 192 <br>
+                                78000 Banja Luka</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="img">
+                            <img src="img/phone-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>+387 66 600 000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="img">
+                            <img src="img/mail.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>markomatavulj@yahoo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE-FOOTER-START -->
+    <footer class="mobile-footer">
+        <img class="footer-logo" src="img/logo.png" alt="">
+        <div class="mobile-info-text">
+            <div class="mobile-info-item">
+                <div class="img">
+                    <img src="img/location.png" alt="">
+                </div>
+                <div class="mobile-text">
+                    <p>Vojvode Uroša Drenovića 192 <br>
+                        78000 Banja Luka</p>
+                </div>
+            </div>
+            <div class="mobile-info-item">
+                <div class="img">
+                    <img src="img/phone-2.png" alt="">
+                </div>
+                <div class="mobile-text">
+                    <p>+387 66 600 000</p>
+                </div>
+            </div>
+            <div class="mobile-info-item">
+                <div class="img">
+                    <img src="img/mail.png" alt="">
+                </div>
+                <div class="mobile-text">
+                    <p>markomatavulj@yahoo.com</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- MOBILE-FOOTER-END -->
+</body>
+
+</html>

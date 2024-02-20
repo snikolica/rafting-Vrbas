@@ -1,0 +1,864 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;1,600;1,700&family=DM+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;1,600;1,700&family=DM+Sans:wght@400;700&family=Literata:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --green: #004823;
+  --yellow: #feca05;
+  --dark: #333;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  height: 100vh;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(img/Onama-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+}
+.header nav {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav .logo {
+  padding-top: 10px;
+  width: 150px;
+}
+.header nav .logo img {
+  width: 100%;
+}
+.header nav ul {
+  list-style: none;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+.header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.header nav ul li a.active {
+  color: var(--yellow);
+}
+.header nav ul li .green {
+  padding: 6px 12px;
+  background-color: var(--green);
+  border-radius: 15px;
+}
+.header nav .phone {
+  padding-top: 15px;
+  cursor: pointer;
+}
+.header nav .phone i {
+  display: inline;
+  color: var(--white);
+  font-size: 20px;
+}
+.header nav .phone p {
+  color: var(--white);
+  display: inline;
+font-size: 20px;
+}
+.header h1 {
+  font-family: "Literata", serif;
+  font-size: 64px;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* MOBILE-START */
+
+.mobile-header {
+  display: none;
+  background-image: url(img/Onama-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  position: relative;
+}
+.mobile-header .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+.mobile-header nav {
+  padding: 10px 15px 0 10px;
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 999;
+}
+.mobile-header nav .mobile-logo {
+  width: 70px;
+}
+.mobile-header nav .mobile-logo img {
+  width: 100%;
+}
+.mobile-header nav .hamburger {
+  font-size: 25px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.mobile-header nav .mobile-phone {
+  cursor: pointer;
+}
+.mobile-header nav .mobile-phone i {
+  font-size: 12px;
+  display: inline;
+  color: var(--white);
+}
+.mobile-header nav .mobile-phone p {
+  color: var(--white);
+  display: inline;
+  font-size: 14px;
+}
+.mobile-header h1 {
+  font-family: "Literata", serif;
+  font-size: 30px;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* MOBILE-END */
+
+/* HAMBURGER-START */
+.mobile-menu {
+  display: none;
+  background-image: url(img/footer-bg.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 40vh;
+  padding: 40px 10px;
+  position: relative;
+}
+.mobile-menu i.close {
+  font-size: 30px;
+  color: var(--white);
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.mobile-menu .menu-box {
+  text-align: center;
+}
+.mobile-menu .menu-box ul {
+  list-style: none;
+  padding: 0 80px;
+}
+.mobile-menu .menu-box ul li {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.mobile-menu .menu-box ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.mobile-menu .menu-box ul li a.active {
+  color: var(--yellow);
+}
+/* HAMBURGER-END */
+
+
+.kamp {
+  height: 65vh;
+  background-color: var(--white);
+  background-image: url(img/spirala.png);
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+}
+
+.kamp .container .text {
+  padding: 50px 0;
+  width: 60%;
+}
+.kamp .container .text h2 {
+  font-family: "Literata", serif;
+  font-size: 64px;
+  margin-bottom: 30px;
+  color: var(--dark);
+}
+.kamp .container .text p {
+  margin: 10px 0;
+  text-align: justify;
+}
+.galery {
+  padding: 50px 0;
+  text-align: center;
+}
+.galery h2 {
+  font-family: "Literata", serif;
+  font-size: 64px;
+  margin-bottom: 50px;
+  color: var(--dark);
+}
+.galery .img-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.galery .img-box .img {
+  flex: 0 0 32%;
+  margin-bottom: 20px;
+  height: 300px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.galery .img-box .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+footer {
+  padding: 50px 20px;
+  background-image: url(img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+footer nav {
+  width: 40%;
+  margin: 0 auto 80px auto;
+  text-transform: uppercase;
+}
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+}
+footer .info {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .info .logo {
+  width: 150px;
+}
+footer .info .logo img {
+  width: 100%;
+}
+footer .info-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .info .info-text .info-item {
+  display: flex;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+footer .info .info-text .info-item p {
+  font-size: 16px;
+  margin-left: 15px;
+  color: var(--white);
+}
+
+/* FOOTER-MOBILE-START */
+.mobile-footer {
+  background-image: url(img/footer-bg.jpg);
+  background-position: center right;
+  background-size: cover;
+  padding: 50px 10px;
+  display: none;
+  justify-content: space-between;
+  position: relative;
+}
+.mobile-footer .footer-logo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 100px;
+}
+.mobile-footer .mobile-info-text {
+  z-index: 1000;
+}
+.mobile-footer .mobile-info-text .mobile-info-item{
+  font-size: 14px;
+  display: flex;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.mobile-footer .mobile-info-text .mobile-info-item .img {
+  margin-right: 10px;
+}
+/* FOOTER-MOBILE-END */
+
+
+/* RESPONSIVE */
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    height: 40vh;
+  }
+  .kamp {
+    height: auto;
+    background-position: 80% 50%;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .kamp .container .text {
+    padding: 30px 10px 20px 10px;
+    width: 100%;
+  }
+  .kamp .container .text h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .kamp .container .text p {
+    margin: 0 0;
+    text-align: left;
+  }
+  .galery h2 {
+    font-size: 30px;
+  }
+  .galery .img-box {
+    padding: 0 10px;
+  }
+  .galery .img-box .img {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+  }
+  .mobile-footer .footer-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+}
+@media only screen and (min-width: 401px) and (max-width: 481px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    height: 40vh;
+  }
+  .mobile-header h1 {
+    font-size: 30px;
+  }
+  .mobile-header nav .mobile-phone p {
+    font-size: 16px;
+  }
+
+  .kamp {
+    height: auto;
+    background-position: 0% 0%;
+  }
+  .kamp .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .kamp .container .text {
+    padding: 30px 10px 20px 10px;
+    width: 100%;
+  }
+  .kamp .container .text h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .kamp .container .text p {
+    margin: 0 0;
+    text-align: left;
+  }
+  .galery h2 {
+    font-size: 35px;
+  }
+  .galery .img-box {
+    padding: 0 10px;
+  }
+  .galery .img-box .img {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+    padding: 50px 15px;
+  }
+  .mobile-footer .footer-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    background-image: url(img/Onama-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+  }
+  .mobile-header h1 {
+    font-size: 30px;
+  }
+  .mobile-header nav .mobile-phone p {
+    font-size: 16px;
+  }
+  .kamp {
+    height: auto;
+    background-position: 0% 0%;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .kamp .container .text {
+    padding: 30px 10px 20px 10px;
+    width: 100%;
+  }
+  .kamp .container .text h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .kamp .container .text p {
+    margin: 0 0;
+    text-align: left;
+  }
+  .galery h2 {
+    font-size: 35px;
+  }
+  .galery .img-box {
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+  .galery .img-box .img {
+    flex: 0 0 49%;
+    margin-bottom: 20px;
+    height:250px;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+    padding: 50px 20px;
+  }
+  .mobile-footer .mobile-info-text .mobile-info-item{
+    font-size: 16px;
+  }
+  .mobile-footer .footer-logo {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+   }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center;
+    height: 40vh;
+  }
+  .header nav {
+    padding: 0 10px 0 0;
+  }
+  .header nav .logo {
+    width: 70px;
+  }
+  .header nav .logo img {
+    width: 100%;
+  }
+  .header nav ul {
+    padding-top: 20px;
+  }
+  .header nav ul li {
+    margin: 0 7px;
+    font-size: 11px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 14px;
+  }
+  .header nav .phone p {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .kamp {
+    height: auto;
+    background-position: 20% 50%;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .kamp .container .text {
+    padding: 30px 0;
+    width: 90%;
+  }
+  .kamp .container .text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .kamp .container .text p {
+    margin: 10px 0;
+    text-align: justify;
+  }
+  .galery h2 {
+    font-size: 40px;
+  }
+  .galery .img-box .img {
+    flex: 0 0 49%;
+    margin-bottom: 20px;
+    height:250px;
+  }
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center;
+    height: 40vh;
+  }
+  .header nav {
+    padding: 0 20px 0 10px;
+  }
+  .header nav .logo {
+    width: 90px;
+  }
+  .header nav .logo img {
+    width: 100%;
+  }
+  .header nav ul {
+    padding-top: 20px;
+  }
+  .header nav ul li {
+    margin: 0 15px;
+    font-size: 12px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 14px;
+  }
+
+  .header nav .phone p {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 55px;
+  }
+  .kamp {
+    height: auto;
+  }
+  .container {
+    width: 90%;
+  }
+  .kamp .container .text {
+    padding: 30px 0;
+    width: 70%;
+  }
+  .kamp .container .text h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  .kamp .container .text p {
+    margin: 10px 0;
+    text-align: justify;
+  }
+  .galery h2 {
+    font-size: 45px;
+  }
+  .galery .img-box .img {
+    margin-bottom: 20px;
+    height:200px;
+  }
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1110px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center;
+    height: 50vh;
+  }
+  .header nav {
+    padding: 0 20px 0 0;
+  }
+  .header nav ul {
+    padding-top: 25px;
+  }
+  .header nav ul li {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 16px;
+  }
+  .header nav .phone p {
+    font-size: 16px;
+  }
+  .header h1 {
+    font-size: 55px;
+  }
+  .kamp {
+    height: 65vh;
+  }
+  .container {
+    width: 80%;
+  }
+  .kamp .container .text {
+    padding: 30px 0;
+    width: 70%;
+  }
+  .kamp .container .text h2 {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  .kamp .container .text p {
+    margin: 10px 0;
+    text-align: justify;
+  }
+  .galery h2 {
+    font-size: 50px;
+  }
+  .galery .img-box .img {
+    margin-bottom: 20px;
+    height:220px;
+  }
+
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+}
+}
+@media only screen and (min-width: 1110px) and (max-width: 1200px) {
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 16px;
+  }
+    .header nav .phone p {
+    font-size: 16px;
+}
+  .galery .img-box .img {
+    margin-bottom: 20px;
+    height:250px;
+  }
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-header nav .mobile-phone i {
+    font-size: 100px;
+    display: inline;
+    color: var(--white);
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer .info .logo {
+    width: 150px;
+}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .galery .img-box .img {
+    margin-bottom: 20px;
+    height:270px;
+  }
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer .info .logo {
+    width: 150px;
+}
+}

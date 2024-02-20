@@ -1,0 +1,1376 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;1,600;1,700&family=DM+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;1,600;1,700&family=DM+Sans:wght@400;700&family=Literata:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --green: #004823;
+  --yellow: #feca05;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  height: 100vh;
+}
+
+.header {
+  transition: 1s all ease;
+  background-image: url(img/background-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+}
+.header nav {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav .logo {
+  padding-top: 10px;
+  width: 150px;
+}
+.header nav .logo img {
+  width: 100%;
+}
+.header nav ul {
+  list-style: none;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+.header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.header nav ul li a.active {
+  color: var(--yellow);
+}
+.header nav ul li .green {
+  padding: 6px 12px;
+  background-color: var(--green);
+  border-radius: 15px;
+}
+.header nav .phone {
+  padding-top: 15px;
+  cursor: pointer;
+}
+.header nav .phone i {
+  display: inline;
+  color: var(--white);
+  font-size: 20px;
+}
+.header nav .phone p {
+  color: var(--white);
+  display: inline;
+font-size: 20px;
+}
+.header h1 {
+  font-family: "Literata", serif;
+  font-size: 64px;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* MOBILE-START */
+.mobile-header {
+  transition: all linear 1s;
+  display: none;
+  height: 40vh;
+  position: relative;
+}
+.mobile-header .header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  transition: all linear 1s;
+}
+.mobile-header nav {
+  padding: 10px 15px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+.mobile-header nav .mobile-logo {
+  width: 70px;
+}
+.mobile-header nav .mobile-logo img {
+  width: 100%;
+}
+.mobile-header nav .hamburger {
+  font-size: 25px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.mobile-header nav .mobile-phone {
+  cursor: pointer;
+}
+.mobile-header nav .mobile-phone i {
+  font-size: 12px;
+  display: inline;
+  color: var(--white);
+}
+.mobile-header nav .mobile-phone p {
+  color: var(--white);
+  display: inline;
+  font-size: 14px;
+}
+.mobile-header h1 {
+  font-family: "Literata", serif;
+  font-size: 20px;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* MOBILE-END */
+
+/* HAMBURGER-START */
+.mobile-menu {
+  display: none;
+  background-image: url(img/footer-bg.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 35vh;
+  padding: 40px 10px;
+  position: relative;
+}
+.mobile-menu i.close {
+  font-size: 30px;
+  color: var(--white);
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.mobile-menu .menu-box {
+  text-align: center;
+}
+.mobile-menu .menu-box ul {
+  list-style: none;
+  padding: 0 80px;
+}
+.mobile-menu .menu-box ul li {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.mobile-menu .menu-box ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.mobile-menu .menu-box ul li a.active {
+  color: var(--yellow);
+}
+/* HAMBURGER-END */
+
+.o-nama {
+  background-color: var(--white);
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.o-nama-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0 60px 0;
+}
+.o-nama-box .left {
+  padding-right: 30px;
+  flex: 0 0 50%;
+}
+.o-nama-box .left h2 {
+  font-size: 64px;
+  color: var(--yellow);
+  font-family: "Literata", serif;
+}
+.o-nama-box .left p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 160%;
+}
+.o-nama-box .left .btn {
+  padding: 7px 15px;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.rafting-rijekom {
+  height: 95vh;
+  background-image: url(img/rafting-rijekom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.rafting-rijekom .text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rafting-rijekom .text h2 {
+  font-family: "Literata", serif;
+  padding: 100px 0 0 0;
+  font-size: 64px;
+  margin-bottom: 50px;
+}
+.rafting-rijekom .text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.rafting-rijekom .text button {
+  padding: 7px 15px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.map {
+  z-index: -99;
+  position: relative;
+  top: -90px;
+  height: 70vh;
+  background-size: cover;
+  background-position: left;
+}
+.map iframe {
+  width: 100%;
+}
+.kontaktirajte-nas {
+  /* height: 100vh; */
+  position: relative;
+  top: -90px;
+  padding: 80px 0;
+  background-color: var(--white);
+}
+.kontaktirajte-nas h2 {
+  font-family: "Literata", serif;
+  font-size: 64px;
+  color: var(--yellow);
+  text-align: center;
+}
+.kontaktirajte-nas p {
+  margin: 20px 0 40px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.kontaktirajte-nas form .form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.kontaktirajte-nas form .form-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.kontaktirajte-nas form .form-box .box-item {
+  flex: 0 0 49%;
+}
+.kontaktirajte-nas form .form-box .box-item label {
+  display: block;
+}
+.kontaktirajte-nas form .form-box .box-item input {
+  width: 100%;
+  height: 30px;
+}
+.kontaktirajte-nas form .form-container .naslov {
+  margin: 20px 0;
+}
+.kontaktirajte-nas form .form-container .naslov label {
+  display: block;
+}
+.kontaktirajte-nas form .form-container .naslov input {
+  width: 100%;
+  height: 30px;
+}
+.kontaktirajte-nas form .form-container .poruka label {
+  display: block;
+  margin-bottom: 5px;
+}
+.kontaktirajte-nas form .form-container .poruka textarea {
+  width: 100%;
+}
+.kontaktirajte-nas form .btn-box {
+  text-align: center;
+  width: 20%;
+  margin: 30px auto;
+}
+.kontaktirajte-nas form .btn {
+  padding: 8px 25px;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+footer {
+  position: relative;
+  top: -90px;
+  padding: 50px 20px;
+  background-image: url(img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+footer nav {
+  width: 40%;
+  margin: 0 auto 80px auto;
+  text-transform: uppercase;
+}
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+}
+footer .info {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .info .logo {
+  width: 150px;
+}
+footer .info .logo img {
+  width: 100%;
+}
+footer .info-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .info .info-text .info-item {
+  display: flex;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+footer .info .info-text .info-item p {
+  font-size: 16px;
+  margin-left: 15px;
+  color: var(--white);
+}
+
+/* FOOTER-MOBILE-START */
+.mobile-footer {
+  background-image: url(img/footer-bg.jpg);
+  background-position: center right;
+  background-size: cover;
+  padding: 50px 10px;
+  display: none;
+  justify-content: space-between;
+  position: relative;
+}
+.mobile-footer .footer-logo {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+}
+.mobile-footer .mobile-info-text {
+  z-index: 1000;
+}
+.mobile-footer .mobile-info-text .mobile-info-item {
+  font-size: 14px;
+  display: flex;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.mobile-footer .mobile-info-text .mobile-info-item .img {
+  margin-right: 10px;
+}
+.mobile-footer .hamburger-footer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+  color: var(--white);
+}
+
+/* FOOTER-MOBILE-END */
+
+/* RESPONSIVE */
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    height: 35vh;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  .o-nama-box {
+    text-align: center;
+    padding: 30px 0 60px 0;
+  }
+  .o-nama-box .left {
+    flex: 0 0 100%;
+    padding: 0 7px 0 7px;
+  }
+  .o-nama-box .left h2 {
+    font-size: 25px;
+  }
+  .o-nama-box .left p {
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .o-nama-box .left .btn {
+    padding: 5px 12px;
+    margin-bottom: 20px;
+  }
+  .o-nama-box .right {
+    width: 100%;
+  }
+  .o-nama-box .right img {
+    width: 100%;
+    display: block;
+  }
+  .rafting-rijekom {
+    height: 100vh;
+    background-image: url(img/rafting-rijekom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .rafting-rijekom .text h2 {
+    padding: 150px 0 0 0;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .rafting-rijekom .text {
+    width: 100%;
+    top: 40%;
+    padding: 0 7px;
+  }
+  .rafting-rijekom .text p {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -90px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  } */
+  .kontaktirajte-nas {
+    top: -90px;
+    padding: 60px 0;
+  }
+  .kontaktirajte-nas h2 {
+    font-size: 25px;
+  }
+  .kontaktirajte-nas p {
+    margin: 15px 0 25px 0;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 7px;
+  }
+  .kontaktirajte-nas form .form-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .kontaktirajte-nas form .form-box .box-item {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+  .kontaktirajte-nas form .btn-box {
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+  }
+    .mobile-footer .footer-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+}
+@media only screen and (min-width: 401px) and (max-width: 481px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .mobile-header h1 {
+    font-size: 30px;
+  }
+  .mobile-header nav .mobile-phone p {
+    font-size: 16px;
+  }
+  .mobile-menu{
+    height: 40vh;
+  }
+  .container {
+    width: 100%;
+  }
+  .o-nama-box {
+    padding: 30px 0 60px 0;
+  }
+  .o-nama-box .left {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 0 7px 0 7px;
+  }
+  .o-nama-box .left h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .o-nama-box .left p {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 130%;
+  }
+  .o-nama-box .left .btn {
+    padding: 7px 14px;
+    margin-bottom: 20px;
+  }
+  .o-nama-box .right {
+    width: 100%;
+  }
+  .o-nama-box .right img {
+    width: 100%;
+    display: block;
+  }
+  .rafting-rijekom {
+    height: 100vh;
+    background-image: url(img/rafting-rijekom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .rafting-rijekom .text h2 {
+    padding: 0 0 0 0;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .rafting-rijekom .text {
+    width: 95%;
+    top: 50%;
+  }
+  .rafting-rijekom .text p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -90px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  } */
+  .kontaktirajte-nas {
+    top: -90px;
+    padding: 60px 0;
+  }
+  .kontaktirajte-nas h2 {
+    font-size: 40px;
+  }
+  .kontaktirajte-nas p {
+    margin: 15px 0 25px 0;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .kontaktirajte-nas form .form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .kontaktirajte-nas form .form-box .box-item {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+  .kontaktirajte-nas form .btn-box {
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+    padding: 50px 15px;
+  }
+   .mobile-footer .footer-logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .mobile-menu{
+    height: 40vh;
+  }
+  .mobile-header {
+    display: block;
+    background-image: url(img/background-1.png);
+    background-size: cover;
+    background-position: center left 20%;
+    height: 40vh;
+  }
+  .mobile-header h1 {
+    font-size: 30px;
+  }
+  .mobile-header nav .mobile-phone p {
+    font-size: 16px;
+  }
+  .container {
+    width: 95%;
+  }
+  .o-nama-box .left {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .o-nama-box .left h2 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .o-nama-box .left p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .o-nama-box .left .btn {
+    padding: 7px 14px;
+    margin-bottom: 20px;
+  }
+  .o-nama-box .right {
+    width: 100%;
+  }
+  .o-nama-box .right img {
+    width: 100%;
+    display: block;
+  }
+  .rafting-rijekom {
+    height: 100vh;
+    background-image: url(img/rafting-rijekom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .rafting-rijekom .text h2 {
+    padding: 0 0 0 0;
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .rafting-rijekom .text {
+    width: 95%;
+    top: 50%;
+  }
+  .rafting-rijekom .text p {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -90px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  } */
+  .kontaktirajte-nas {
+    top: -90px;
+    padding: 60px 0;
+  }
+  .kontaktirajte-nas h2 {
+    font-size: 45px;
+  }
+  .kontaktirajte-nas p {
+    margin: 15px 0 25px 0;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .kontaktirajte-nas form .form-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .kontaktirajte-nas form .form-box .box-item {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+  .kontaktirajte-nas form .btn-box {
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: flex;
+    padding: 50px 20px;
+    position: relative;
+  }
+  .mobile-footer .footer-logo {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    height: 100px;
+  }
+  .mobile-footer .mobile-info-text .mobile-info-item {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center left;
+    height: 50vh;
+  }
+  .header nav {
+    padding: 0 10px 0 0;
+  }
+  .header nav .logo {
+    width: 70px;
+  }
+  .header nav .logo img {
+    width: 100%;
+  }
+  .header nav ul {
+    padding-top: 20px;
+  }
+  .header nav ul li {
+    margin: 0 7px;
+    font-size: 11px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 14px;
+  }
+  .header nav .phone p {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .container {
+    width: 90%;
+  }
+  .o-nama-box .left {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .o-nama-box .left h2 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .o-nama-box .left p {
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .o-nama-box .left .btn {
+    padding: 8px 15px;
+    margin-bottom: 30px;
+  }
+  .o-nama-box .right {
+    width: 100%;
+  }
+  .o-nama-box .right img {
+    width: 100%;
+    display: block;
+  }
+  .rafting-rijekom {
+    height: 100vh;
+    background-image: url(img/rafting-rijekom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .rafting-rijekom .text h2 {
+    padding: 0 0 0 0;
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .rafting-rijekom .text {
+    width: 95%;
+    top: 50%;
+  }
+  .rafting-rijekom .text p {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -90px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  } */
+  .kontaktirajte-nas {
+    top: -90px;
+    padding: 60px 0;
+  }
+  .kontaktirajte-nas h2 {
+    font-size: 45px;
+  }
+  .kontaktirajte-nas p {
+    margin: 15px 0 25px 0;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .kontaktirajte-nas form .form-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .kontaktirajte-nas form .form-box .box-item {
+    flex: 0 0 49%;
+    margin-bottom: 0;
+  }
+  .kontaktirajte-nas form .btn-box {
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+  }
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center left;
+    height: 70vh;
+  }
+  .header nav {
+    padding: 0 20px 0 10px;
+  }
+  .header nav .logo {
+    width: 90px;
+  }
+  .header nav .logo img {
+    width: 100%;
+  }
+  .header nav ul {
+    padding-top: 20px;
+  }
+  .header nav ul li {
+    margin: 0 15px;
+    font-size: 12px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 14px;
+  }
+  .header nav .phone p {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 55px;
+  }
+  .container {
+    width: 90%;
+  }
+  .o-nama-box .left {
+    flex: 0 0 80%;
+    padding-bottom: 30px;
+  }
+  .o-nama-box .left h2 {
+    font-size: 45px;
+    text-align: left;
+  }
+  .o-nama-box .left p {
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .o-nama-box .left .btn {
+    padding: 8px 15px;
+    margin-bottom: 30px;
+  }
+  .o-nama-box .right {
+    width: 100%;
+  }
+  .o-nama-box .right img {
+    width: 100%;
+    display: block;
+  }
+  .rafting-rijekom {
+    height: 100vh;
+    background-image: url(img/rafting-rijekom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .rafting-rijekom .text h2 {
+    padding: 0 0 0 0;
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .rafting-rijekom .text {
+    width: 95%;
+    top: 50%;
+  }
+  .rafting-rijekom .text p {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -120px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  } */
+  .kontaktirajte-nas {
+    top: -100px;
+    padding: 60px 0;
+  }
+  .kontaktirajte-nas h2 {
+    font-size: 45px;
+  }
+  .kontaktirajte-nas p {
+    margin: 15px 0 25px 0;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .kontaktirajte-nas form .form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .kontaktirajte-nas form .form-box .box-item {
+    flex: 0 0 49%;
+    margin-bottom: 0;
+  }
+  .kontaktirajte-nas form .btn-box {
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+  }
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1110px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-position: center left;
+    height: 90vh;
+  }
+  .header nav {
+    padding: 0 20px 0 0;
+  }
+  .header nav ul {
+    padding-top: 25px;
+  }
+  .header nav ul li {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 16px;
+  }
+  .header nav .phone p {
+    font-size: 16px;
+  }
+  .header h1 {
+    font-size: 55px;
+  }
+  .o-nama .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .o-nama-box .left {
+    flex: 0 0 50%;
+    padding-bottom: 30px;
+  }
+  .o-nama-box .left h2 {
+    font-size: 50px;
+  }
+  .o-nama-box .left p {
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .o-nama-box .left .btn {
+    padding: 8px 15px;
+    margin-bottom: 30px;
+  }
+  .o-nama-box .right {
+    flex: 0 0 49%;
+  }
+  .o-nama-box .right img {
+    width: 100%;
+    display: block;
+  }
+  .rafting-rijekom {
+    height: 100vh;
+    background-image: url(img/rafting-rijekom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .rafting-rijekom .text h2 {
+    padding: 0 0 0 0;
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .rafting-rijekom .text {
+    width: 95%;
+    top: 50%;
+  }
+  .rafting-rijekom .text p {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -100px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  } */
+  .kontaktirajte-nas {
+    top: -60px;
+    padding: 60px 0;
+  }
+  .kontaktirajte-nas h2 {
+    font-size: 50px;
+  }
+  .kontaktirajte-nas p {
+    margin: 15px 0 25px 0;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .kontaktirajte-nas form .form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .kontaktirajte-nas form .form-box .box-item {
+    flex: 0 0 49%;
+    margin-bottom: 0;
+  }
+  .kontaktirajte-nas form .btn-box {
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+  }
+  footer {
+    padding: 40px 20px;
+    background-position: right;
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  footer .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .info-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .info .info-text .info-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  footer .info .info-text .info-item p {
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--white);
+  }
+  footer .info .logo {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 1110px) and (max-width: 1200px) {
+  .header nav .phone i {
+    display: inline;
+    color: var(--white);
+    font-size: 16px;
+  }
+  .header nav .phone p {
+    font-size: 16px;
+}
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .o-nama .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .o-nama-box .left {
+    flex: 0 0 50%;
+    padding-bottom: 30px;
+  }
+  .o-nama-box .left h2 {
+    font-size: 50px;
+  }
+  .o-nama-box .left p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .o-nama-box .left .btn {
+    padding: 8px 15px;
+    margin-bottom: 30px;
+  }
+  .o-nama-box .right {
+    flex: 0 0 49%;
+  }
+  .o-nama-box .right img {
+    width: 100%;
+    display: block;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -100px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  } */
+  .kontaktirajte-nas form .form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer .info .logo {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .o-nama-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0 60px 0;
+  }
+  .o-nama-box .left {
+    padding-right: 30px;
+    flex: 0 0 49%;
+  }
+  .o-nama-box .left h2 {
+    font-size: 64px;
+    color: var(--yellow);
+    font-family: "Literata", serif;
+  }
+  .o-nama-box .left p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .o-nama-box .right {
+    flex: 0 0 49%;
+  }
+  /* .map {
+    z-index: -99;
+    position: relative;
+    top: -100px;
+    height: 450px;
+    background-image: url(img/mapa.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .kontaktirajte-nas form .form-container {
+    width: 50%;
+    margin: 0 auto;
+  } */
+  footer nav {
+    width: 60%;
+    margin: 0 auto 80px auto;
+    text-transform: uppercase;
+  }
+  footer .info .logo {
+    width: 150px;
+}
+}
